@@ -1,0 +1,53 @@
+{
+  "appId": "com.todo.flipclock",
+  "productName": "Todo",
+  "copyright": "Copyright © 2026",
+  "directories": {
+    "output": "dist",
+    "buildResources": "assets/icons"
+  },
+  "files": [
+    "index.html",
+    "main.js",
+    "preload.js",
+    "styles.css",
+    "renderer.js",
+    "flipclock.js",
+    "pomodoro.js",
+    "package.json",
+    "assets/**"
+  ],
+  "asar": true,
+  "compression": "maximum",
+  "win": {
+    "icon": "assets/icons/icon.ico",
+    "target": [
+      {
+        "target": "nsis",
+        "arch": ["x64"]
+      }
+    ],
+    "artifactName": "Setup-${productName}-${version}.${ext}"
+  },
+  "nsis": {
+    "oneClick": false,
+    "perMachine": false,
+    "allowElevation": true,
+    "allowToChangeInstallationDirectory": true,
+    "createDesktopShortcut": true,
+    "createStartMenuShortcut": true,
+    "shortcutName": "Todo",
+    "installerLanguages": ["zh_CN"],
+    "language": "2052",
+    "deleteAppDataOnUninstall": false
+  },
+  "mac": {
+    "icon": "assets/icons/icon.png",
+    "target": ["dmg"]
+  },
+  "linux": {
+    "icon": "assets/icons/",
+    "target": ["AppImage"]
+  },
+  "publish": null
+}

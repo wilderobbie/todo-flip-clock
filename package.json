@@ -1,0 +1,22 @@
+{
+  "name": "todo-flip-clock",
+  "productName": "Todo",
+  "description": "Todo - 翻页时钟 & 番茄时钟桌面应用",
+  "keywords": [],
+  "main": "./main.js",
+  "version": "1.0.0",
+  "author": "zy_001",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder --win",
+    "dist:mac": "electron-builder --mac",
+    "dist:linux": "electron-builder --linux"
+  },
+  "devDependencies": {
+    "electron": "37.2.5",
+    "electron-builder": "^26.18.0"
+  }
+}
